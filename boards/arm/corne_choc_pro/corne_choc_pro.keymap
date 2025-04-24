@@ -28,16 +28,6 @@
             >;
         };
 
-        movement_layer {
-            display-name = "MOVEMENT";
-            bindings = <
-                &kp TAB   &kp N1      &kp N2       &kp N3      &kp N4      &kp N5       &kp LPAR     &kp RPAR  &kp PG_UP   &kp SLEEP   &kp C_VOL_UP &kp C_VOL_DN &trans        &kp BSPC
-                &kp LCTRL &trans      &trans       &trans      &trans      &trans       &kp LBRC     &kp RBRC  &kp HOME    &kp LEFT    &kp DOWN    &kp UP       &kp RIGHT      &trans
-                &kp LSHFT &trans      &trans       &trans      &trans      &trans                              &kp PG_DN   &trans      &trans      &trans       &trans         &trans
-                                                            &kp LGUI   &trans       &kp SPACE           &mo 3      &kp BSPC     &trans     
-            >;
-        };
-
         lower_layer {
             display-name = "NUMBER";
             // -----------------------------------------------------------------------------------------
@@ -68,58 +58,8 @@
             >;
         };
 
-        extra_layer_1 {
-            display-name = "EXTRA 1";
-            bindings = <
-                &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp LCTRL &kp RCTRL &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans       
-            >;
-        };
-
-        extra_layer_2 {
-            display-name = "EXTRA 2";
-            bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans       
-            >;
-        };
-
-        extra_layer_3 {
-            display-name = "EXTRA 3";
-            bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans       
-            >;
-        };
-
-        extra_layer_4 {
-            display-name = "EXTRA 4";
-            bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans       
-            >;
-        };
-
-        extra_layer_5 {
-            display-name = "EXTRA 5";
-            bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans       
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
+        extra_layer {
+            display-name = "EXTRA";
             bindings = <
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
