@@ -55,7 +55,7 @@
             bindings = <
                 &kp TAB   &kp N1      &kp N2       &kp N3      &kp N4      &kp N5       &kp LPAR     &kp RPAR  &kp PAGE_UP &kp SLEP    &kp VOLD    &kp VOLU     &trans         &kp BSPC
                 &kp LCTRL &trans      &trans       &trans      &trans      &trans       &kp LBRC     &kp RBRC  &kp HOME    &kp LEFT    &kp DOWN    &kp UP       &kp RIGHT      &trans
-                &kp LSHFT &trans      &trans       &trans      &trans      &trans       &trans       &trans    &kp PAGE_DOWN  &trans   &trans      &trans       &trans         &trans
+                &kp LSHFT &trans      &trans       &trans      &trans      &trans                              &kp PAGE_DOWN  &trans   &trans      &trans       &trans         &trans
                                                             &kp LGUI   &trans       &kp SPACE           &mo 3      &kp BSPC     &trans     
             >;
         };
@@ -64,8 +64,8 @@
             display-name = "SYMBOL";
             bindings = <
                 &trans     &trans     &kp LT      &kp GT      &kp COMMA   &kp DOT     &trans     &trans     &kp AMP     &kp SQT     &kp PERC    &kp CIRC    &trans      &trans
-                &trans     &trans     &kp PLUS    &kp EQUAL   &kp QUOT    &kp HASH    &trans     &trans     &kp PIPE    &kp MINUS   &kp QMARK   &kp ASTERISK &trans      &trans
-                &trans     &trans     &kp FSLH    &kp MINUS   &kp BSLS    &kp COLON   &trans     &trans     &kp TILD    &kp DOLLAR  &kp AT      &kp EXLM    &trans      &trans
+                &trans     &trans     &kp PLUS    &kp EQUAL   &kp QUOT    &kp HASH    &trans     &trans     &kp PIPE    &kp MINUS   &kp QMARK   &kp ASTERISK &trans     &trans
+                &trans     &trans     &kp FSLH    &kp MINUS   &kp BSLS    &kp COLON                         &kp TILD    &kp DOLLAR  &kp AT      &kp EXLM    &trans      &trans
                                                             &trans     &kp DEL     &mo 3       &trans     &trans      &trans
             >;
         };
@@ -75,7 +75,7 @@
             bindings = <
                 &trans     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &trans     &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &trans      &trans
                 &trans     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &trans     &trans      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
-                &trans     &trans      &trans      &trans      &trans      &trans      &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                &trans     &trans      &trans      &trans      &trans      &trans                             &trans      &trans      &trans      &trans      &trans      &trans
                                                             &trans     &kp DEL     &mo 3       &trans     &trans      &trans
             >;
         };
@@ -83,10 +83,10 @@
         adjust_layer {
             display-name = "ADJUST";
             bindings = <
-                &trans          &rgb_mode_next     &rgb_mode_prev     &rgb_hue_inc        &rgb_saturation_inc   &rgb_val_inc         &trans          &trans          &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4       &trans
-                &trans          &rgb_hue_dec       &rgb_saturation_dec &rgb_val_dec        &rgb_toggle          &rgb_permode         &trans          &trans          &bt BT_CLR         &sys_reset         &bootloader        &studio_unlock     &trans             &trans
-                &trans          &trans             &trans             &trans              &trans               &trans               &trans          &trans          &trans             &trans             &trans             &trans             &trans             &trans
-                                                            &trans          &kp DEL           &mo 4               &trans          &trans             &trans
+                &trans          &rgb_mode_next     &rgb_mode_prev     &rgb_hue_inc         &rgb_saturation_inc   &rgb_val_inc         &trans          &trans          &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4       &trans
+                &trans          &rgb_hue_dec       &rgb_saturation_dec &rgb_val_dec        &rgb_toggle           &rgb_permode         &trans          &trans          &bt BT_CLR         &sys_reset         &bootloader        &studio_unlock     &trans             &trans
+                &trans          &trans             &trans             &trans               &trans                &trans                                               &trans             &trans             &trans             &trans             &trans             &trans
+                                                                                                  &trans          &kp DEL           &mo 4               &trans          &trans             &trans
             >;
         };
 
