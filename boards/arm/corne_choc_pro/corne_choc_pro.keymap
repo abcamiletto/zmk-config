@@ -10,6 +10,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define LHYP LS(LA(LC(LGUI)))   /* ⇧⌥⌃⌘  on the left side  */
+#define RHYP RS(RA(RC(RGUI)))   /* ⇧⌥⌃⌘  on the right side */
+
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -33,25 +36,6 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <15 16 17 18 19>;
             hold-trigger-on-release;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-    };
-
-    macros {
-        // Define macros for left and right "hyper" keys
-        LHYP: left_hyper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT &kp LCTRL &kp LALT &kp LGUI>;
-        };
-        
-        RHYP: right_hyper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RSHIFT &kp RCTRL &kp RALT &kp RGUI>;
         };
     };
 
