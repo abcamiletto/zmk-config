@@ -18,26 +18,27 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             require-prior-idle-ms = <130>;
-            tapping-term-ms = <260>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <22 23 24 25 26 27>;
-            /* hold-trigger-on-release; */
+            hold-trigger-on-release;
         };
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             require-prior-idle-ms = <130>;
-            tapping-term-ms = <260>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <15 16 17 18 19>;
-            /* hold-trigger-on-release; */
+            hold-trigger-on-release;
         };
     };
+    
 
     keymap {
         compatible = "zmk,keymap";
