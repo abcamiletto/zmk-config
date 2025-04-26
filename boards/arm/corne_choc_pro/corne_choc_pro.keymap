@@ -18,24 +18,24 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             require-prior-idle-ms = <130>;
             tapping-term-ms = <260>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <22 23 24 25 26 27>;
-            hold-trigger-on-release;
+            /* hold-trigger-on-release; */
         };
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             require-prior-idle-ms = <130>;
             tapping-term-ms = <260>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <15 16 17 18 19>;
-            hold-trigger-on-release;
+            /* hold-trigger-on-release; */
         };
     };
 
