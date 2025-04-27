@@ -61,7 +61,7 @@
                 &trans &trans       &trans          &trans       &trans       &trans       &kp DEL   &kp BSPC  &trans   &trans   &trans   &trans  &trans    &trans
                 &trans &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LBRC  &kp RBRC  &kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans  &trans
                 &trans &bt BT_CLR   &rgb_ug RGB_TOG &sys_reset   &bootloader  &studio_unlock                   &trans   &trans   &trans   &trans  &trans    &trans
-                                                    &kp LGUI     &trans       &kp SPACE                        &kp CLCK &kp BSPC &trans     
+                                                    &kp LGUI     &trans       &kp SPACE                        &trans &kp BSPC &trans     
             >;
         };
 
@@ -71,7 +71,7 @@
                 &trans    &trans   &kp APOS  &kp LT    &kp GT   &kp PRCNT &kp LCTRL &kp RCTRL &kp DLLR  &kp QMARK &kp PRCNT &kp CARET &trans  &trans
                 &trans    &trans   &kp PLUS  &kp EQUAL &kp STAR &kp HASH  &kp LALT  &kp RALT  &kp PIPE  &kp SLASH &kp BSLH  &kp AMPS  &kp SEMI &trans 
                 &trans    &trans   &kp EXCL &kp MINUS &kp GRAVE &trans                        &kp COLON &kp TILDE &kp AT    &trans    &trans  &trans
-                                             &trans    &kp DEL  &kp CLCK                      &trans    &trans    &trans
+                                             &trans    &kp DEL  &trans                        &trans    &trans    &trans
             >;
         };
 
@@ -81,7 +81,7 @@
                 &trans    &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &trans   &trans   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans
                 &trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &trans   &trans   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &trans
                 &trans    &trans    &trans    &trans    &trans    &trans                      &trans   &trans   &trans   &trans   &trans   &trans
-                                              &trans    &trans    &trans                      &trans   &trans   &trans       
+                                              &trans    &kp CLCK  &trans                      &trans   &kp CLCK &trans       
             >;
         };
 
