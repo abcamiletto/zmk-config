@@ -24,6 +24,7 @@
         quick-tap-ms          = <225>;   /* repeat-tap grace window    */
         hold-while-undecided;            
         hold-while-undecided-linger;
+        #binding-cells = <2>;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_R>;
         hold-trigger-on-release;
@@ -35,6 +36,7 @@
         quick-tap-ms          = <225>;
         hold-while-undecided;
         hold-while-undecided-linger;
+        #binding-cells = <2>;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_L>;
         hold-trigger-on-release;
